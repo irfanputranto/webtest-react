@@ -28,7 +28,7 @@ const Article = () => {
 
   const handleSave = async (e) => {
     e.preventDefault();
-    setLoading(true);
+    setLoading(false);
 
     formData.append("title", title);
     formData.append("content", content);
@@ -43,7 +43,7 @@ const Article = () => {
       setVideo("");
       setImage("");
 
-      setLoading(false);
+      setLoading(true);
       navigate("/");
       alert("Data saved successfully!");
     } catch (error) {

@@ -1,0 +1,21 @@
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.animate-typing {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 0.1em solid #ffffff;
+  white-space: nowrap;
+  margin-right: 0px;
+  animation: typing 1s steps(10, end) 1s forwards;
+}
+
+.bg-hero {
+  background-image: url(/img/hero-bg.jpg);
+}
